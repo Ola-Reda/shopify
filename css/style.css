@@ -1,0 +1,332 @@
+* {
+    box-sizing: border-box;
+}
+:root {
+    --main-background: #002d2d;
+    --alt-background: #004c3f;
+}
+::selection {
+    background-color: var(--alt-background);
+    color:white;
+}
+html {
+    scroll-behavior: smooth;
+}
+@font-face {
+    font-family: Recoleta;
+    src: url(../webfonts/font/Recoleta-Black.ttf);
+}  
+body {
+    font-family: 'Outfit', sans-serif;
+    /* font-family: Recoleta;  */
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+} 
+.container {
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+/*start header*/
+header {
+    background-color: #a5e3b9;
+    text-align: center;
+    color: #000;
+    padding: 6px;
+}
+header p {
+    display: inline-block;
+}
+header a {
+    color: #000;
+    font-weight: 600;
+    border-bottom: 1px solid #000;
+}
+header button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    margin-left: 10px;
+}
+/*end header*/
+/*start navbar*/
+nav{
+    background-color: var(--main-background);
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+nav .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/*start nav-right*/
+nav .right{
+    display: flex;
+    align-items: center;
+}
+nav .right img{
+    width: 130px;
+}
+nav .right ul{
+    display: flex;
+    align-items: center;
+}
+nav .right a{
+    color: #fff;
+    margin-right: 28px;
+    font-size: 17px;
+    display: inline-block;
+}
+/*end nav-right*/
+/*start nav-left*/
+nav .left ul{
+    display: flex;
+    align-items: center;
+}
+nav .left a{
+    color: #fff;
+    font-size: 17px;
+    margin-left: 30px;
+    display: inline-block;
+}
+nav .left li:last-child a{
+    background-color: #008060;
+    padding: 15px 20px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+/*end nav-left*/
+/*end navbar*/
+/*start main*/
+main{
+    background-color: var(--main-background);
+    padding-left: 90px;
+}
+main .box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+main .text {
+    width: 50%;
+    padding-right: 60px;
+}
+main .text h1{
+    font-size: 58px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+main .text p.one{
+    font-size: 18px;
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+main .text form input{
+    border-radius: 4px;
+    padding: 16px 15px;
+    width: 330px;
+    outline: none;
+    border: 1px solid transparent;
+    margin-bottom: 8px;
+}
+main .text form button{
+    background-color: #008060;
+    color: #fff;
+    border-radius: 4px;
+    padding: 16px 25px;
+    outline: none;
+    font-weight: 600;
+    margin-left: 10px;
+    border: 1px solid var(--alt-background);
+    cursor: pointer;
+}
+main .text p.two{
+    font-size: 14px;
+    color: #fff;
+    line-height: 20px;
+}
+main .image{
+    width: 50%;
+}
+main .image img{
+    width: 100%;
+    margin-bottom: -5px;
+}
+/*end main*/
+/*start section help*/
+.help{
+    background-color: #fbf7ed;
+    margin-top: 50px;
+}
+.help .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding-left: 80px;
+}
+.help .text {
+    width: 50%;
+    padding-right: 68px;
+}
+.help .text h2{
+    font-size: 48px;
+    color: #212326;
+}
+.help .text .box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+.help .text .box h3 {
+    font-size: 18px;
+    font-weight: 300;
+}
+.help .text .box p {
+    color: #6b7177;
+    line-height: 20px;
+}
+.help .text .box a {
+    color: #008061;
+    font-weight: 600;
+}
+.help .text .box svg {
+    margin-left: 8px;
+}
+.help .image{
+    width: 50%;
+}
+.help .image img{
+    width: 100%;
+    margin-bottom: -5px;
+}
+/*end section help*/
+/*start section business*/
+.business {
+    margin-top: 90px;
+    margin-bottom: 90px;
+    text-align: center;
+}
+.business .box h2 {
+    color: #212326;
+    font-size: 36px;
+    margin-bottom: 14px;
+}
+.business .box p {
+    color: #6b7177;
+    font-size: 20px;
+}
+.business .box a {
+    color: #fff;
+    padding: 16px 25px;
+    background-color: #008060;
+    border-radius: 4px;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 15px;
+    transition: .3s;
+}
+.business .box a:hover {
+    background-color: var(--alt-background);
+}
+/*end section business*/
+/*start footer*/
+footer{
+    background-color: var(--alt-background);
+    color: #fff;
+    padding-top: 30px;
+}
+/*start upper-footer*/
+footer .upper-footer{
+    border-bottom: 1px solid rgba(210,213,217,0.1);
+    padding-bottom: 25px;
+}
+footer .upper-footer ul{
+    display: flex;
+    align-items: center;
+}
+footer .upper-footer a{
+    color: #fff;
+    margin-right: 30px;
+    font-weight: 600;
+}
+/*end upper-footer*/
+/*start footer-body*/
+footer .footer-body{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 25px;
+    padding-top: 20px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid rgba(210,213,217,0.1);
+}
+footer .footer-body h3{
+    font-size: 14px;
+}
+footer .footer-body a{
+    display: inline-block;
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 18px;
+}
+footer .footer-body .one{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+/*end footer-body*/
+/*end footer-down*/
+footer .footer-down{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+footer .footer-down .left ul{
+    display: flex;
+    align-items: center;
+}
+footer .footer-down .left a{
+    margin-left: 30px;
+    background-color: #fff;
+    padding: 4px 6px;
+    border-radius: 50%;
+}
+footer .footer-down .left svg{
+    color: var(--alt-background);
+}
+footer .footer-down .right ul{
+    display: flex;
+    align-items: center;
+}
+footer .footer-down .right a{
+    display: inline-block;
+    color: #fff;
+    margin-left: 15px;
+}
+/*end footer-down*/
+/*end footer*/
