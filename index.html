@@ -60,7 +60,7 @@
                 <div class="text">
                     <h1>If you can dream it, you can sell it with Shopify</h1>
                     <p class="one">Build your business here. Take it anywhere.</p>
-                    <form>
+                    <form id="contactForm">
                         <input type="email" id="email" placeholder="Enter your email address" name="email">
                         <button id="btn" class="btn" onclick="store()" ondblclick="ValidateEmail()">Start free trial</button>
                     </form>
@@ -227,7 +227,7 @@
         <!--font awesome js file-->
         <script src="js/all.min.js"></script>
         <script src="js/jquery-3.6.1.min.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/3.7.4/firebase.js"></script>
+        <!-- <script src="https://www.gstatic.com/firebasejs/3.7.4/firebase.js"></script> -->
         <script type="module">
             // Import the functions you need from the SDKs you need
             import { initializeApp } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-app.js";
@@ -239,6 +239,7 @@
             const firebaseConfig = {
                 apiKey: "AIzaSyATLRshpJlJV9Gkcq5r-up_8m0n-KsLOW8",
                 authDomain: "shopify-dfffd.firebaseapp.com",
+                databaseURL: "https://shopify-dfffd-default-rtdb.firebaseio.com",
                 projectId: "shopify-dfffd",
                 storageBucket: "shopify-dfffd.appspot.com",
                 messagingSenderId: "200782213854",
@@ -248,14 +249,6 @@
             // Initialize Firebase
             const app = initializeApp(firebaseConfig);
             const analytics = getAnalytics(app);
-            console.log(firebase);
-            // function store() {
-            //     email = document.getElementById("email").value;
-            //     firebase.datebase().ref("/").child(Name).update({
-            //         email : email,
-            //         pupose : "adding gmail"
-            //     });
-            // }
         </script>
         <script src="js/main.js"></script>
     </body>

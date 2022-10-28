@@ -11,13 +11,39 @@ addbtn.addEventListener('click', (e) => {
     });
 });
 
-// function store() {
-//     email = document.getElementById("email").value;
-//     firebase.datebase().ref("/").child(Name).update({
-//         email : email,
-//         pupose : "adding gmail"
-//     });
-// }
+function store() {
+    email = document.getElementById("email").value;
+    firebase.datebase().ref("/").child(Name).update({
+        email : email,
+        pupose : "adding gmail"
+    });
+}
+
+// var messagesRef = firebase.database().ref('Collected Data')
+//         document.getElementById('contactForm').addEventListener('submit', submitForm);
+//         function submitForm(e) {
+//             e.preventDefault();
+
+//             // Get values
+//             var email = getInputVal('email');
+
+//             saveMessage(email);
+//             document.getElementById('contactForm').reset();
+//         }
+
+//         // Function to get get form values
+//         function getInputVal(id) {
+//             return document.getElementById(id).value;
+//         }
+
+//         // Save message to firebase
+//         function saveMessage(email) {
+//             var newMessageRef = messagesRef.push();
+//             newMessageRef.set({
+//                 email: email,
+//             });
+//         }
+
 
 // $(".btn").click(function(){
 //     var email = $("#email").val();
